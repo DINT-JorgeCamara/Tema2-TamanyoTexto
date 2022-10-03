@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace Tema2_TamanyoTexto
+{
+    /// <summary>
+    /// Lógica de interacción para MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void RadioButtonMarcado(object sender, RoutedEventArgs e)
+        {
+            RadioButton botonRadio = (RadioButton)sender;
+            switch(int.Parse(botonRadio.Tag.ToString()))
+            {
+                case 36: 
+                    TextoCambiante.FontSize = 36;
+                    break;
+
+                case 72:
+                    TextoCambiante.FontSize = 72;
+                    break;
+
+                default:
+                    TextoCambiante.FontSize = 48;
+                    break;
+            }
+        }
+    }
+}
