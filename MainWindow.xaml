@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema2_TamanyoTexto"
         mc:Ignorable="d"
-        Title="MainWindow" Height="432.254" Width="878.592">
+        Title="Tamaño texto" Height="432.254" Width="878.592" Icon="Recursos/tamanyoLetra.ico">
     <Grid>
         <TextBlock x:Name="TextoCambiante" HorizontalAlignment="Left" Margin="0,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="161" Width="861" FontWeight="Bold" FontSize="48" TextAlignment="Center" Foreground="#FF43AE2B" >
             <TextBlock.Effect>
